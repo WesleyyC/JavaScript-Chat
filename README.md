@@ -10,21 +10,21 @@ As an asynchronous event driven framework, Node.js is designed to build scalable
 Need to install the net module and readline module first: 
 
 	
-	$sudo npm install net;
+	$ sudo npm install net;
 	
-	$sudo npm install readline;
+	$ sudo npm install readline;
 	
 
 Run server by: 
 
   	
-  	$node chat-service.js;
+  	$ node chat-service.js;
   	
   	
 Run client by: 
 
 	
-  	$node chat-client.js <username>;
+  	$ node chat-client.js <username>;
   	
  
 ####Notice
