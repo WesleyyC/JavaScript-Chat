@@ -1,0 +1,13 @@
+{
+    "name": "chat",
+    "version": "0.2.0",
+    "description": "Chat Program",
+    "author": "Wesley Wei Qian <wesley.chin0919@gmail.com> (https://github.com/WesleyyC)",
+    "scripts": {
+        "start": "node --harmony ./chat-server.js"
+    },
+    "dependencies": {
+        "net": "^1.0.2",
+        "readline": "^0.0.3"
+    }
+}
