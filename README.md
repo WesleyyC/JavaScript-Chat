@@ -3,7 +3,7 @@
 ####Introduction
 This is a chat room program with two JavaScript programs (server program and client program) run by node.js.
 
-####Install Node.js
+####About Node.js
 As an asynchronous event driven framework, Node.js is designed to build scalable network applications and you can download it from [their website](http://nodejs.org/download/)
 
 ####Usage
