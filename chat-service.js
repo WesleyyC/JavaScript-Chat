@@ -1,4 +1,3 @@
-
 'use strict';
 
 var peers = [];
@@ -42,13 +41,13 @@ const
         // loop out the information
         var broadcastMsg = function(sender, chatContent){
 
-            var newPeers = [];
+            let newPeers = [];
 
-            for(var i=0; i<peers.length; i++){
+            for (let i=0; i<peers.length; i++){
                 try{
                     peers[i].write(JSON.stringify({type:"chat", name:sender, messages: chatContent}) + '\n');
                     newPeers.push(peers[i]);
-              }
+                }
                 catch(err){
                     console.log("Error sending to connection."+JSON.stringify(err));
                 }

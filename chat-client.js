@@ -7,7 +7,8 @@ var capitaliseFirstLetter = function(string){
 
 const
     net = require('net'),
-    client = net.connect({port: 5000}),
+    // Host IP is the IP of the computer who run the chat-server.js
+    client = net.connect({host:'localhost', port: 5000}),
     username = capitaliseFirstLetter(process.argv[2]),
     readline = require('readline'),
     rl = readline.createInterface({
@@ -15,10 +16,13 @@ const
         output: process.stdout
     });
 
+rl.setPrompt(">", 1);
+
 client.write(JSON.stringify({type: 'greeting', name: username}) + '\n');
 
 rl.on('line', function (message) {
     client.write(JSON.stringify({type: 'chat', name: username, messages: message}) + '\n');
+    rl.prompt();
 });
 
 client.on('data', function(data)
@@ -27,7 +31,8 @@ client.on('data', function(data)
 
     if (message.type === 'welcome')
     {
-        console.log("Hello " + message.name +"! This is the Terminal Version of Group Chat V0.1.");
+        console.log("Hello " + message.name +"! This is Wes Group Chat V0.2");
+        rl.prompt();
     }
     else if (message.type =='chat')
     {
@@ -35,11 +40,13 @@ client.on('data', function(data)
 
         if (sender !== username){
             let chatContent = message.messages;
-            console.log(sender + ": " + chatContent);
+            console.log(chatContent+" ("+sender+")");
+            rl.prompt();
         }
     }
     else
     {
         throw Error("Unrecognized message type: " + message.type);
     }
+
 });
