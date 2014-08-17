@@ -18,7 +18,7 @@ Need to install the net module and readline module first:
 Run server by: 
 
   	
-  	$ node chat-service.js;
+  	$ node chat-server.js;
   	
   	
 Run client by: 
