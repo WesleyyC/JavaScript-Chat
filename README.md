@@ -23,4 +23,18 @@ Run client by:
 	
   	$node chat-client.js <username>;
   	
+ 
+####Notice
+To connect to the server, change the line of `chat-client.js`:
+```javascript
+client = net.connect({host:'localhost', port: 5000})
+```
+to 
+```javascript
+client = net.connect({host:<Server Computer IP Address>, port: 5000})
+```
+
+####Contact
+Author: Wesley Wei Qian <wesley.chin0919@gmail.com>
+  	
 	
