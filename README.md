@@ -7,9 +7,11 @@ This are two JavaScript programs (server program and client program) run by node
 
 Need to install the net module first: 
   	$sudo npm install net 
+  	$sudo npm install readline
 
 Run server by: 
   	$node chat-service.js;
+  	
 Run client by: 
   	$node chat-client.js <username>;
 	
