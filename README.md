@@ -7,7 +7,9 @@ This is a chat room program with two JavaScript programs (server program and cli
 As an asynchronous event driven framework, Node.js is designed to build scalable network applications and you can download it from [their website](http://nodejs.org/download/)
 
 ####Usage
-Need to install the net module and readline module first: 
+Use `cd` directing to the folder where you put the two JavaScript File.
+
+Install the net module and readline module: 
 
 	
 	$ sudo npm install net;
