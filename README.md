@@ -1,4 +1,4 @@
-#JavaScriptChat
+#JavaScriptChat [![Code Climate](https://codeclimate.com/repos/54c43d5a695680671e0000cf/badges/98194cc5f2799326f66b/gpa.svg)](https://codeclimate.com/repos/54c43d5a695680671e0000cf/feed)
 
 ####Introduction
 This is a chat room program with two JavaScript programs (server program and client program) run by node.js.
