@@ -6,7 +6,7 @@ This is a chat room program with two JavaScript programs (server program and cli
 ![ScreenShootMain](http://i.imgur.com/JBXbF2D.jpg)
 
 ####About Node.js
-As an asynchronous event driven framework, Node.js is designed to build scalable network applications and you can download it from [their website](http://nodejs.org/download/)
+As an asynchronous event driven framework, Node.js is designed to build scalable network applications and you can download it from [their website](http://nodejs.org/download/) or use [Homebrew](http://brew.sh/).
 
 ####Usage
 Use `cd` directing to the folder where you put the two JavaScript File.
